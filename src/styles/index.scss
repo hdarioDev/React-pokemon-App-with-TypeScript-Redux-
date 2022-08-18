@@ -1,0 +1,29 @@
+@import "./variables.scss";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background: $bg;
+    width: 100%;
+    font-family: $poppins;
+    color: $dark;
+    height: 100vh; //que la altura sea toda la altura del view port
+    // margin: 0 auto; //tecnica para centrar el body
+    overscroll-behavior: none; //evitar que haga rebotes al usar scroll
+
+}
+
+#app {
+    //punto de entrada del index
+    // box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow-x: hidden; // no tenga over flow en el eje horizontal
+    min-height: 100vh; //altura minima por defecto sea la misma del view port
+    padding-bottom: 10px; //padding por debajo 
+    // display: flex;
+    // justify-content: center;
+}

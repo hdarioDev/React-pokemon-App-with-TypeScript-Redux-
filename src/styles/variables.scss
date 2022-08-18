@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+$poppins : 'Poppins',
+sans-serif;
+
+//colors
+$dark: rgb(29, 29, 29);
+$light: #fff;
+$secundary: rgb(60, 60, 129);
+$primary: rgb(162, 162, 246);
+$bg: #4a4a4a;
+
+//spacing
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+//border radius
+$borderRadius: 12px;
+
+//header height
+$headerHeight: 100px;
+
+@mixin breakpoint($point) {
+    @if $point ==md {
+
+        //320 PX MOBILE
+        //768 px  TABLET
+        //1024 PX DESKTOP
+        @media(min-width: 48em) {
+            @content;
+        }
+    }
+}
