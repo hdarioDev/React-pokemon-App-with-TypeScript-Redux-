@@ -5,7 +5,7 @@ import Searcher from '../components/Searcher'
 const Home = () => {
     return (
         <>
-            <Searcher />
+            {/* <Searcher /> */}
             <PokemonList />
         </>
     )

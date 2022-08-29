@@ -1,16 +1,15 @@
 import React from 'react'
-import Header from "./Header";
-
-import classes from "../styles/components/Layout.module.scss";
+import NavBar from '../components/NavBar'
+import classes from "../styles/components/Layout.module.scss"
 
 interface Props {
-    children: JSX.Element,	// si necesitas tipo children 
+    children: JSX.Element,
 }
 
 const Layout = ({ children }: Props) => {
     return (
         <>
-            <Header />
+            <NavBar />
             <div className={classes.container}>{children}</div>
         </>
     )

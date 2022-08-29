@@ -5,6 +5,15 @@ export interface IPokemon {
     sprites: any;
     types: any;
     favorite: boolean;
+    base_experience: number;
+}
+
+export interface IPokemonDetail {
+    id: number;
+    name: string;
+    sprites: any;
+    types: any;
+    favorite: boolean;
 }
 
 export interface IPokemonFromApi {

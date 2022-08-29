@@ -1,0 +1,182 @@
+.content {
+    margin-top: 60px;
+
+    .span__arrow {
+        position: absolute;
+        background-color: rgb(176 176 176 / 27%);
+        top: 86px;
+        left: 28px;
+        color: white;
+        padding-top: 8px;
+        text-align: center;
+        /* padding: 4px; */
+        padding-left: 8px;
+        border-radius: 8px;
+        padding-right: 8px;
+        cursor: pointer;
+
+
+    }
+}
+
+.pill {
+    padding-right: 80px;
+    padding-top: 5px;
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: aqua;
+}
+
+.text {
+    color: "#fff";
+}
+
+.container {
+    max-width: 630px;
+    // background: cadetblue;
+    border-bottom-left-radius: 140px;
+    border-bottom-right-radius: 140px;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    background-color: rgb(49 49 49);
+    flex-direction: column;
+    height: 300px;
+    margin: 0 auto;
+
+    &__name {
+        color: #fffcfd;
+        text-transform: capitalize;
+        font-size: 28px;
+        font-weight: 600;
+        margin-top: 40px;
+        // height: 300px;
+        // width: 300px;
+        // background: darkcyan;
+        // border-radius: 12px;
+        // margin-top: 14px;
+        // position: absolute;
+        // top: 200px;
+
+    }
+
+    &__order {
+        background-color: #474747;
+        color: white;
+        padding: 6px;
+        padding-left: 14px;
+        padding-right: 14px;
+        border-radius: 14px;
+        margin-top: 18px;
+    }
+
+    &__types {
+        display: flex;
+        flex-direction: row;
+        margin-top: 28px;
+
+        span {
+            margin-right: 8px;
+            margin-left: 8px;
+            background-color: beige;
+            padding: 6px;
+            color: #4b05ec;
+            padding-left: 28px;
+            padding-right: 28px;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+
+        span:nth-child(2) {
+            background-color: #57369b;
+            color: cornsilk;
+        }
+    }
+
+    &__contentImg {
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        top: 190px;
+        margin-top: 18px;
+        text-align: center;
+
+        img {
+            height: 250px;
+            width: 250px;
+        }
+    }
+}
+
+h3 {
+    color: #fff;
+    margin-bottom: 12px;
+    margin-left: 12px;
+}
+
+.container__stats {
+
+    padding-top: 40px;
+    margin: 0 auto;
+    max-width: 680px;
+    overflow: scroll;
+    margin-bottom: 20px;
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+
+    .blockTitle {
+        width: 35%;
+        margin-left: 5%;
+
+        .statName {
+            font-size: 13px;
+            margin: 2px;
+            color: #d4d3d1;
+        }
+    }
+
+    .blockInfo {
+        display: flex;
+        width: 58%;
+        flex-direction: 'row';
+        align-items: center;
+
+        .number {
+            width: 12%;
+            font-size: 12px;
+            color: #dfe50f;
+            font-weight: 600;
+            text-align: start;
+        }
+
+        .bgBar {
+            background-color: #dedede;
+            width: 78%;
+            height: 10px;
+            border-radius: 20px;
+            overflow: hidden;
+
+            .bar {
+                // backgroundColor: "red",
+                // width: "100%",
+                height: 10px;
+                border-radius: 20px;
+
+            }
+        }
+    }
+}
+
+/* Medium only */
+@media screen and (min-width: 640px) {
+
+    .container {
+
+        border-bottom-left-radius: 190px;
+        border-bottom-right-radius: 190px;
+    }
+}

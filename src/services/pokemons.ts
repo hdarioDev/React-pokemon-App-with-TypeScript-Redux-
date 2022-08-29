@@ -19,7 +19,6 @@ export const fetchPokemons = async (offset: number, limit: number) => {
 
         return axios.get(`${API}pokemon?limit=${limit}&offset=${offset}`)
             .then((res) => {
-                // console.log("res.data ", res.data);
                 return res.data.results
             })
     }
@@ -36,7 +35,8 @@ export const fetchPokemons = async (offset: number, limit: number) => {
                 url,
                 sprites,
                 types,
-                favorite: false
+                favorite: false,
+                base_experience: 0
             }
         })
     }
@@ -50,10 +50,10 @@ export const fetchPokemons = async (offset: number, limit: number) => {
 
 }
 
-export const getPokemonDetails = (pokemon: IPokemon) => {
-    return axios.get(pokemon.url)
+export const getPokemonDetails = (pokemonName: string) => {
+    return axios.get(`${API}pokemon/${pokemonName}`)
         .then(response => {
-            // console.log("response ", response);
+            console.log("response.data ", response.data);
 
             return response.data;
         })

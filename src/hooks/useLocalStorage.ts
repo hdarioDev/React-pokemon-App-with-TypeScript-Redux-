@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 export function useLocalStorage(key: any, initialValue: any) {
 
-    const [value, setVaslue] = useState(() => {
+    const [value, setValue] = useState(() => {
         try {
             const item = localStorage.getItem(key)
             return item != null ? JSON.parse(item) : initialValue
@@ -13,10 +13,9 @@ export function useLocalStorage(key: any, initialValue: any) {
 
     //customHook
     const setLocalStorage = (value: any) => {
-
         try {
             localStorage.setItem(key, JSON.stringify(value))
-            setVaslue(value)
+            setValue(value)
         } catch (error) {
             console.log("error ", error)
         }

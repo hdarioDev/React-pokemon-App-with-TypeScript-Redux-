@@ -1,11 +1,10 @@
 import React from 'react'
 import PokemonDetail from '../components/PokemonDetail'
 
-const Pokemon = (props: any) => {
-
+const Pokemon = () => {
 
     return (
-        <Pokemon />
+        <PokemonDetail />
     )
 }
 

@@ -9,11 +9,17 @@
     gap: 12px;
     margin-left: 12px;
     margin-right: 12px;
-    max-width: 1100px;
+    max-width: 960px;
     margin: 0;
+    margin-top: 44px;
 
     @include breakpoint(md) {
-        padding-top: 40px;
+        padding-top: 94px;
         margin: 0 auto;
     }
+}
+
+#list__footer {
+    background-color: red;
+    height: 100px;
 }

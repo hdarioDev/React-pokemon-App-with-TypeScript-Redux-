@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+.container__favorites {
+
+    width: 100%;
+    // background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    color: rgb(243, 242, 242);
+    flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 70px;
+
+    @include breakpoint(md) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 80px;
+    }
+
+}
